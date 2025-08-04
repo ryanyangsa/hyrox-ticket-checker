@@ -62,7 +62,7 @@ def check_ticket():
         )
         send_slack_alert(message)
     else:
-        print("⏳ 아직 취소표 없음 (ADAPTIVE 외 티켓 없음)")
+		print(f"⏳ 아직 취소표 없음 (KST {now_str}) - ADAPTIVE 외 티켓 없음")
 
 # ✅ 서버 시작 시 슬랙 알림
 send_slack_alert(f"🚀 하이록스 티켓 체크 서비스가 시작되었습니다! (KST {datetime.now(KST).strftime('%Y-%m-%d %H:%M')})")
